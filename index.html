@@ -16,11 +16,18 @@
 
   <section id="projekte">
     <h2>Meine Projekte</h2>
-    
-    <article>
-      <h3>Projekt 1</h3>
-      <p>Projekt 1 Beschreibung</p>
-    </article>
+
+    <!-- Filter-Buttons zur Interaktivität -->
+    <div class="filter-leiste" role="group" aria-label="Projekte nach Kategorie filtern">
+      <button class="filter-btn" data-kategorie="Alle">Alle</button>
+      <button class="filter-btn" data-kategorie="Mobile">Mobile</button>
+      <button class="filter-btn" data-kategorie="Embedded">Embedded</button>
+      <button class="filter-btn" data-kategorie="Frontend">Frontend</button>
+    </div>
+
+    <!-- Hier werden die <article>-Elemente von TypeScript dynamisch eingefügt -->
+    <div id="projekte-liste"></div>
+  </section>
 
     <article>
       <h3>Projekt 2</h3>
